@@ -3,24 +3,24 @@ package com.iteso.modelo;
 /**
  * Created by GGGK4 on 29/10/2015.
  */
-public class Usuario {
+public class User {
 
-    public String nombre;
+    public String name;
     public String dir;
     public String mail;
     private String pass;
-    public char permisos;
+    public char role;
 
-    public Usuario(){
+    public User(){
 
     }
 
-    public Usuario(String nombre, String dir, String mail, String pass, char permisos){
-        this.nombre = nombre;
+    public User(String name, String dir, String mail, String pass, char role){
+        this.name = name;
         this.dir = dir;
         this.mail = mail;
         this.pass = pass;
-        this.permisos = permisos;
+        this.role = role;
     }
 
     public String getDir(){
@@ -31,15 +31,15 @@ public class Usuario {
         return mail;
     }
 
-    public String getNombre(){
-        return nombre;
+    public String getName(){
+        return name;
     }
 
     public String getPass(){
         return pass;
     }
 
-    public char getPermisos(){
-        return permisos;
+    public char getRole(){
+        return role;
     }
 }
