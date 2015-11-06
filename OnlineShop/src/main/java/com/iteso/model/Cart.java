@@ -30,7 +30,7 @@ public class Cart {
         this.price = price;
     }
 
-    public Cart(String code, String user, double precio, String date, String hour, String payForm){
+    public Cart(String code, String user, double price, String date, String hour, String payForm){
         this.code = code;
         this.user = user;
         this.price = price;
@@ -41,7 +41,7 @@ public class Cart {
 
     public void addProduct(String newProd, int quant, double prodPrice){
        if(this.items.containsKey(newProd) == true){
-           int newQuant = this. items.get(newProd) + quant;
+           int newQuant = this.items.get(newProd) + quant;
            this.items.put(newProd,newQuant);
            this.price += (quant * prodPrice);
        }
