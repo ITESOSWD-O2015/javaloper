@@ -1,9 +1,11 @@
 package com.iteso.model;
 
+import java.io.Serializable;
+
 /**
  * Created by GGGK4 on 29/10/2015.
  */
-public class User {
+public class User implements Serializable{
 
     public String name;
     public String dir;

@@ -1,12 +1,13 @@
 package com.iteso.model;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * Created by GGGK4 on 02/11/2015.
  */
-public class Cart {
+public class Cart implements Serializable{
 
     public String code;
     public String user;

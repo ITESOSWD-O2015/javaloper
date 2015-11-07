@@ -5,6 +5,8 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 
+import static junit.framework.TestCase.assertFalse;
+
 /**
  * Created by GGGK4 on 05/11/2015.
  */
@@ -14,7 +16,12 @@ public class CartTest {
     public double price;
 
     @Test
-    public void addProductTest(){
+    public void addProductTrueTest(){
+
+    }
+
+    @Test
+    public void addProductFalseTest(){
 
     }
 
